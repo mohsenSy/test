@@ -1,5 +1,6 @@
 *~
 *.o
-Makefile
+lib/*.a
 
+Makefile
 helloworld

@@ -5,5 +5,5 @@
 using namespace std;
 
 void hello(){
-    cout << "hello world\nMohsen\n";
+    cout << "Hi, my name is Mohsen\n";
 }
