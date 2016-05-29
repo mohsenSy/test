@@ -1,24 +1,7 @@
-TARGET = helloworld
+TEMPLATE = subdirs
 
-HEADERS += hello.h
+SUBDIRS = lib src
 
-SOURCES += hello.cpp
-SOURCES += main.cpp
+CONFIG += ordered
 
-CONFIG += debug
-
-win32 {
-    SOURCES += hellowin.cpp
-}
-
-unix {
-    SOURCES += hellounix.cpp
-}
-
-!exists( main.cpp ){
-    error("No main.cpp file found")
-}
-
-win32:debug{
-    CONFIG += console
-}
+src.depends = lib
